@@ -6,12 +6,14 @@ use Alura\Leilao\Model\Leilao;
 
 class Avaliador
 {
-    private $maiorValor;
+    private $maiorValor = 0;
     public function avalia(Leilao $leilao): void
     {
-        $lances = $leilao->getLances(); //pega os lances do leilão
-        $ultimoLance = $lances[count($lances) - 1]; //conta o número de lances e pega o último lance, pois começa a contar do 0
-        $this->maiorValor = $ultimoLance->getValor(); //armazena no maiorValor o valor do ultimo lance
+        foreach ($leilao->getLances() as $lance) {
+            if ($lance->getValor() > $this->maiorValor) { //se este lance for maior que o maiorValor...
+                $this->maiorValor = $lance->getValor();
+            }
+        }
     }
 
     public function getMaiorValor(): float

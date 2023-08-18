@@ -16,3 +16,7 @@ Assert: verificar se a saída é a esperada
     Alternativa correta! Testar manualmente é um processo suscetível a erros. Podemos simplesmente nos esquecer de realizar determinada ação,
     validar os dados de forma errada, etc. Além disso, testes manuais são demorados. Com testes automatizados, nós ganhamos muita velocidade e
      confiabilidade em nosso processo.
+
+
+. -Sucesso
+F - Falha
