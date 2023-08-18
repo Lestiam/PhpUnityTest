@@ -1,0 +1,18 @@
+Esse é o esqueleto básico de um teste automatizado, seja escrevendo código manualmente ou utilizando alguma ferramenta.
+Existem até mesmo padrões bem documentados por grandes engenheiros de software e estudiosos na área, como o Arrange Act Assert,
+que equivale justamente às etapas que descrevemos acima:
+Arrange: criar de um cenário para execução de um teste
+Act: executar o código a ser testado
+Assert: verificar se a saída é a esperada
+
+1)No último vídeo, vimos como podemos estruturar um código que testa o nosso sistema e provê um feedback imediato para a pessoa que precisar executá-lo.
+  Quais as vantagens desta abordagem sobre testar manualmente a funcionalidade?
+
+  *Aumentar a confiança e segurança para alterar (refatorar) códigos existentes
+   Alternativa correta! Se temos um código já testado, podemos refatorá-lo com muito mais segurança já que temos uma validação imediata da funcionalidade dele.
+   Caso nossa refatoração quebre algo, o teste irá falhar e nós podemos desfazer a alteração sem que isso vire um bug.
+
+   *Evitar erros humanos e agilizar o processo de testes da aplicação
+    Alternativa correta! Testar manualmente é um processo suscetível a erros. Podemos simplesmente nos esquecer de realizar determinada ação,
+    validar os dados de forma errada, etc. Além disso, testes manuais são demorados. Com testes automatizados, nós ganhamos muita velocidade e
+     confiabilidade em nosso processo.
